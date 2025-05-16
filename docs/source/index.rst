@@ -66,7 +66,7 @@ tutorials or simply to test NMRDfromMD.
    :caption: Best practices
    :hidden:
 
-   theory/best-practice
+   best-practices/best-practices
 
 .. toctree::
    :maxdepth: 2

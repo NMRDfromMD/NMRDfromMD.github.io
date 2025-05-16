@@ -9,3 +9,6 @@
 [submodule ".submodules/dataset-peg-water-mixture"]
 	path = .submodules/dataset-peg-water-mixture
 	url = git@github.com:NMRDfromMD/dataset-peg-water-mixture.git
+[submodule ".submodules/dataset-water-in-silica"]
+	path = .submodules/dataset-water-in-silica
+	url = git@github.com:NMRDfromMD/dataset-water-in-silica.git

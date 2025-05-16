@@ -1,8 +1,8 @@
 Best practices
 ==============
 
-Here, a set of best practive for performing accurate dipolar NMR
-calculations from NMR is provided.
+Here, a set of best practices for performing accurate dipolar NMR
+calculations from moelcular dynamics simulation is provided.
 
 Choosing the Force Field
 ------------------------
@@ -96,7 +96,12 @@ Box size
 --------
 
 NMR relaxation measurements are sensitive to the 
-finite-size effects that can occur with small simulation boxes :cite:`grivetNMRRelaxationParameters2005`.
+finite-size effects that can occur with small simulation
+boxes :cite:`grivetNMRRelaxationParameters2005`. Small
+simulation boxes impose a cut-off to the maximum time of
+first return trajectory, :math:`\tau_\text{cut-off} \sim L^2 / D`,
+where :math:`L` is the box size and :math:`D` the diffusion
+coefficient. 
 
 As an illustration, the NMR relaxation rate :math:`R_1`
 was measured for water with different number of molecules
@@ -113,11 +118,11 @@ Note that :math:`R_1^\text{intra}`, which is the dominant contribution to
 by the box size and therefore the resulting error induced on the 
 total relaxation rate :math:`R_1` remains small for :math:`N > 1000`.
 
-.. image:: ../figures/illustrations/bulk-water/effect_L_on_R1-dark.png
+.. image:: best-practices/box-size-dm.png
     :class: only-dark
     :alt: NMR results obtained from the LAMMPS simulation of water
 
-.. image:: ../figures/illustrations/bulk-water/effect_L_on_R1-light.png
+.. image:: best-practices/box-size.png
     :class: only-light
     :alt: NMR results obtained from the LAMMPS simulation of water
 
